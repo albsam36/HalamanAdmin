@@ -1,25 +1,21 @@
-/*!
-
-=========================================================
-* Vue Argon Dashboard - v2.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/vue-argon-dashboard
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/vue-argon-dashboard/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 import ArgonDashboard from "./plugins/argon-dashboard";
+import firebase from 'firebase'
 import "element-plus/lib/theme-chalk/index.css";
+
+
+let config = {
+    apiKey: "AIzaSyBxPemPIXRlqExrVdnnTxOPvJqD9b0Sw6A",
+    authDomain: "analitica-dev2.firebaseapp.com",
+    databaseURL: "https://analitica-dev2.firebaseio.com",
+    projectId: "analitica-dev2",
+    storageBucket: "analitica-dev2.appspot.com",
+    messagingSenderId: "811817140779",
+    appId: "1:811817140779:web:ee2c05eb21304736f5206e"
+  };
+firebase.initializeApp(config);
 
 const appInstance = createApp(App);
 appInstance.use(router);

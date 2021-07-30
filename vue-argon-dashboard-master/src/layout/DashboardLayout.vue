@@ -1,7 +1,6 @@
 <template>
   <div class="wrapper" :class="{ 'nav-open': $sidebar.showSidebar }">
     <side-bar
-      :background-color="sidebarBackground"
       short-title="Argon"
       title="Argon"
     >
@@ -80,7 +79,7 @@ export default {
   },
   data() {
     return {
-      sidebarBackground: "vue", //vue|blue|orange|green|red|primary
+      sidebarBackground: "blue", //vue|blue|orange|green|red|primary
     };
   },
   methods: {

@@ -15,7 +15,7 @@ import Register from "../views/Register.vue";
 const routes = [
   {
     path: "/",
-    redirect: "/dashboard",
+    redirect: "/login",
     component: DashboardLayout,
     children: [
       {
