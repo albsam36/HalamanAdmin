@@ -12,28 +12,20 @@
             <small>Login to Analitica Admin</small>
           </div>
           <form @submit.prevent="userLogin">
-            <input
-              formClasses="input-group-alternative mb-3"
-              placeholder="Email"
-              addon-left-icon="ni ni-email-83"
-              v-model="model.email"
-            />
-         
-
-            <input
-              formClasses="input-group-alternative mb-3"
-              placeholder="Password"
-              type="password"
-              addon-left-icon="ni ni-lock-circle-open"
-              v-model="model.password"
-            />
-           
-
-            <base-checkbox class="custom-control-alternative">
+             <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" v-model="model.email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" v-model="model.password">
+            </div>
+        
+            <!-- <base-checkbox class="custom-control-alternative">
               <span class="text-muted">Remember me</span>
-            </base-checkbox>
+            </base-checkbox> -->
             <div class="text-center">
-              <button type="submit" class="button-login my-4">Sign in</button>
+              <button type="submit" class="btn btn-danger">Sign In</button>
             </div>
           </form>
         </div>

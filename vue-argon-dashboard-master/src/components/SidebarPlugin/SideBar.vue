@@ -9,7 +9,7 @@
         <span class="navbar-toggler-icon"></span>
       </navbar-toggle-button>
       <router-link class="navbar-brand" to="/">
-         <img src="img/logo-analitica-black.png" />
+         <img src="img/logo-analitica-black.png" style="width: 170px; height: 140px;"/>
       </router-link>
 
       <slot name="mobile-right">
@@ -99,11 +99,11 @@
           <slot name="links"> </slot>
         </ul>
         <!--Divider-->
-        <hr class="my-3" />
+        <!-- <hr class="my-3" /> -->
         <!--Heading-->
-        <h6 class="navbar-heading text-muted">Documentation</h6>
+        <!-- <h6 class="navbar-heading text-muted">Documentation</h6> -->
         <!--Navigation-->
-        <ul class="navbar-nav mb-md-3">
+        <!-- <ul class="navbar-nav mb-md-3">
           <li class="nav-item">
             <a
               class="nav-link"
@@ -128,7 +128,7 @@
               <i class="ni ni-ui-04"></i> Components
             </a>
           </li>
-        </ul>
+        </ul> -->
       </div>
     </div>
   </nav>

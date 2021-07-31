@@ -15,12 +15,12 @@
 
         <sidebar-item
           :link="{
-            name: 'Icons',
+            name: 'Add Data',
             icon: 'ni ni-planet text-blue',
             path: '/icons',
           }"
         />
-        <sidebar-item
+        <!-- <sidebar-item
           :link="{
             name: 'Maps',
             icon: 'ni ni-pin-3 text-orange',
@@ -54,7 +54,7 @@
             icon: 'ni ni-circle-08 text-pink',
             path: '/register',
           }"
-        />
+        /> -->
       </template>
     </side-bar>
     <div class="main-content" :data="sidebarBackground">
